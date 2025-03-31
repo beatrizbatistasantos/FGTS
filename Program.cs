@@ -1,4 +1,3 @@
-﻿using System.Globalization;
 Console.Clear();
 decimal salario = 0 ; const decimal porcentagemfgts = 0.08m;
 
