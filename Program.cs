@@ -1,9 +1,12 @@
-﻿decimal salario = 0, fgts = 0;
+﻿using System.Globalization;
+Console.Clear();
+decimal salario = 0 ; const decimal porcentagemfgts = 0.08m;
+
 
 Console.WriteLine("Olá, digite o salário do seu funcionário:");
 salario = Convert.ToDecimal(Console.ReadLine()!);
 
-fgts = (salario/100) * 8;
+decimal valorfgts = salario * porcentagemfgts;
 
 Console.WriteLine($"\nSalário (R$)..:{salario:N2}");
-Console.Write($"\nFGTS:R$ {fgts :N2}");
+Console.Write($"\nFGTS: {valorfgts:C2}");
